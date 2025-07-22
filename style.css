@@ -418,7 +418,7 @@ body {
     }
 
     .project, .cert-card, .skills {
-        width: 90%;
+        width: 100%;
     }
 
     .tech, .techy {
@@ -427,7 +427,6 @@ body {
     }
 }
 
-/* ========== Mobile Phones (Most Responsive) ========== */
 @media (max-width: 480px) {
     #nav {
         flex-direction: column;

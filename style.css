@@ -1,3 +1,6 @@
+/* ========== Mobile-First Responsive Additions ========== */
+
+/* Base Styles (No change) */
 * {
     padding: 0;
     margin: 0;
@@ -353,8 +356,7 @@ body {
     margin-top: 1rem;
 }
 
-/* ========== Media Queries for Responsiveness ========== */
-
+/* ========== Desktop/Small Laptop ========== */
 @media (max-width: 1024px) {
     #link {
         flex-wrap: wrap;
@@ -385,7 +387,8 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+/* ========== Tablet & Big Phones ========== */
+@media (max-width: 768px) {
     #nav {
         flex-direction: column;
         height: auto;
@@ -397,7 +400,7 @@ body {
     }
 
     #link {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -411,7 +414,7 @@ body {
     }
 
     .box {
-        width: 90vw;
+        width: 70vw;
     }
 
     .project, .cert-card, .skills {
@@ -421,5 +424,100 @@ body {
     .tech, .techy {
         font-size: 0.8rem;
         padding: 6px 10px;
+    }
+}
+
+/* ========== Mobile Phones (Most Responsive) ========== */
+@media (max-width: 480px) {
+    #nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 5%;
+    }
+
+    #nav h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #link {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    #link a {
+        font-size: 0.9rem;
+    }
+
+    #content h1 {
+        font-size: 1.8rem;
+    }
+
+    #content p {
+        font-size: 1rem;
+    }
+
+    #button {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    .btn {
+        width: 80%;
+        padding: 8px 16px;
+    }
+
+    #about-head h1,
+    #pro-head h1,
+    #skill-head h1,
+    #cert-head h1,
+    #contact-head h1 {
+        font-size: 2rem;
+    }
+
+    #about-head p,
+    #pro-head p,
+    #skill-head p,
+    #cert-head p,
+    #contact-head p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .box {
+        width: 85vw;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+    }
+
+    .project, .cert-card, .skills {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .tech, .techy {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+
+    #contact-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #left-contact, #right-contact {
+        width: 100%;
+    }
+
+    .contact-item img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .resume-btn-container a {
+        width: 100%;
+        text-align: center;
     }
 }
